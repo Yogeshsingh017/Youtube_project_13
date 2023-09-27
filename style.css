@@ -1,0 +1,368 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.5s ease-in-out;
+    font-family: 'Raleway', sans-serif;
+}
+
+html,
+body {
+    background: rgba(248, 250, 255, 255);
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    transition: 0.5s ease-in-out;
+}
+
+.nav {
+    height: 70px;
+    background-color: rgba(255, 255, 255, 255);
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+    box-shadow: 0 0 20px rgb(233, 231, 231);
+}
+
+.nav h1 {
+    margin-left: 10px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.nav i {
+    margin-right: 10px;
+    font-size: 30px;
+    border: 1px solid rgb(135, 197, 241);
+    padding: 3px 10px 3px 10px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.nav a {
+    color: black;
+    text-decoration: none;
+    animation: clr 3s linear infinite;
+}
+
+@keyframes clr {
+    0% {
+        color: black;
+    }
+
+    50% {
+        color: #4a87f8;
+    }
+}
+
+.ident {
+    display: flex;
+    align-items: center;
+}
+
+.vote {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vote h3 {
+    color: #0dbb93;
+}
+
+.gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(250, 249, 255, 255);
+    text-align: center;
+}
+
+.gallery img {
+    object-fit: cover;
+}
+
+.use {
+    text-align: center;
+    color: rgb(111, 108, 108);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 300px;
+    background-color: #ffffff;
+    padding: 50px 10px 50px 10px;
+}
+
+.use span {
+    padding: 3px 10px 3px 10px;
+    color: black;
+    font-weight: 900;
+    background-color: #9cfddd;
+}
+
+.service {
+    text-align: center;
+    padding: 50px 10px 50px 10px;
+    background-color: #fbf9ff;
+}
+
+.service h3 {
+    color: #18d6aa;
+    font-weight: bold;
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card1 .head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card1 {
+    padding: 40px 25px 40px 25px;
+    width: 70%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(220, 217, 217);
+}
+
+.card1 i {
+    font-size: 30px;
+    color: #3b66f4;
+}
+
+.p {
+    font-weight: 300;
+    color: rgb(111, 108, 108);
+    text-align: left;
+    font-weight: 600;
+}
+
+.card1 button {
+    background: #4a87f8;
+    border: none;
+    color: white;
+    padding: 10px 30px 10px 30px;
+    font-size: 20px;
+    display: flex;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 40px 25px 40px 25px;
+    flex-direction: column;
+}
+
+.contact h2 {
+    color: #18d6aa;
+    font-size: 19px;
+}
+
+.contact h1 {
+    margin-top: 5px;
+}
+
+.contact input {
+    padding: 15px 20px 15px 20px;
+    font-size: 15px;
+    border: none;
+    border: 1px solid rgb(189, 189, 189);
+    border-radius: 15px;
+    outline: none;
+    width: 80%;
+}
+
+.contact .message {
+    padding: 15px 20px 150px 10px;
+}
+
+.contact button {
+    padding: 10px;
+    width: 80%;
+    border-radius: 30px;
+    outline: none;
+    color: white;
+    font-size: 20px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    background: #4a87f8;
+}
+
+.details {
+    display: flex;
+    transform: scale(1.2);
+    width: 100vw;
+    margin-left: 100px;
+    flex-direction: column;
+}
+
+.details .phone i {
+    padding: 10px;
+    font-size: 20px;
+    background-color: #4a87f8;
+    box-shadow: 0 0 5px #4a87f8;
+    border-radius: 50%;
+    color: white;
+}
+
+.details .email i {
+    padding: 10px;
+    font-size: 20px;
+    background-color: #4a87f8;
+    box-shadow: 0 0 5px #4a87f8;
+    border-radius: 50%;
+    color: white;
+}
+
+.details .location i {
+    padding: 10px;
+    font-size: 20px;
+    background-color: #4a87f8;
+    box-shadow: 0 0 5px #4a87f8;
+    border-radius: 50%;
+    color: white;
+}
+
+.details .phone {
+    margin-left: 100px;
+    display: flex;
+}
+
+.details .email {
+    display: flex;
+    margin-left: 100px;
+}
+
+.details .location {
+    display: flex;
+    margin-left: 100px;
+}
+
+.details .p {
+    margin-left: 10px;
+}
+
+.subscribe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    background-color: #fbf9ff;
+    flex-direction: column;
+}
+
+.subscribe h3 {
+    margin-top: 5px;
+    color: rgb(125, 125, 125);
+    font-weight: light;
+}
+
+.subscribe input {
+    margin-top: 20px;
+    padding: 10px 20px 10px 20px;
+    font-size: 25px;
+    border: none;
+    border: 1px solid rgb(189, 189, 189);
+    border-radius: 15px;
+    outline: none;
+}
+
+.subscribe button {
+    margin-top: 10px;
+    padding: 15px 30px 15px 30px;
+    font-size: 25px;
+    border: none;
+    background: #4a87f8;
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: white;
+}
+
+footer i {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 530px) {
+    .gallery img {
+        /* margin-left: -100px; */
+        transform: scale(0.6);
+    }
+
+    .use img {
+        transform: scale(0.6);
+        /* margin-left: -100px; */
+    }
+
+    .details {
+        transform: scale(0.8);
+        margin-left: -100px;
+    }
+
+    .subscribe {
+        transform: scale(0.8);
+    }
+
+    .subscribe button {
+        transform: scale(0.6);
+    }
+}
+
+.ul {
+    width: 100vw;
+    padding: 20px 20px 30px 20px;
+    height: 200px;
+    margin-top: -195px;
+    border-bottom: 5px solid #3b66f4;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 0 20px #d5d4d7;
+}
+
+.ul li {
+    list-style-type: none;
+    margin: 10px;
+}
+
+.ul a {
+    color: black;
+    text-decoration: none;
+    transition: 0.1s;
+    border-radius: 10px;
+    padding: 3px 10px 3px 10px;
+}
+
+.ul a:hover {
+    background: #4a87f8;
+    color: white;
+    box-shadow: 0 0 10px #3b66f4;
+}
+
+.nav button {
+    background-color: transparent;
+    border: none;
+}
